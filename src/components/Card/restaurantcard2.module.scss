@@ -1,0 +1,159 @@
+/* RestaurantCard.scss */
+
+.restaurant-card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  display: grid; /* Use grid display */
+  grid-template-columns: 1fr; /* Single column layout */
+  grid-gap: 10px; /* Gap between cards */
+  margin: 10px;
+  padding: 10px;
+
+  .image-container {
+    max-height: 300px; /* Limit the image height */
+    display: flex; /* Use flexbox to center the image vertically */
+    align-items: center; /* Center the image vertically */
+    justify-content: center; /* Center the image horizontally */
+    overflow: hidden; /* Hide overflow to crop images */
+  }
+
+  .image-container img {
+    max-width: 100%; /* Ensure the image does not exceed its container's width */
+    height: auto; /* Allow the image to scale proportionally */
+    border-radius: 10px; /* Add rounded corners to the image */
+  }
+
+  h3 {
+    margin-bottom: 10px;
+  }
+
+  /* ... (Rest of your styles remain the same) */
+}
+
+
+
+
+// .restaurant-card {
+//   background-color: white;
+//   padding: 20px;
+//   border-radius: 20px;
+//   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+//   margin: 10px;
+//   text-align: center;
+//   display: flex;
+//   flex-direction: column; /* Display flex to arrange content vertically */
+
+//   .image-container {
+//     flex: 1; /* Image takes up most of the available vertical space */
+//     cursor: pointer;
+
+//     img {
+//       max-width: 100%;
+//       height: auto;
+//       border-radius: 15px;
+//     }
+//   }
+
+//   .info-container {
+//     padding: 10px; /* Add some padding for the info section */
+//     border-top: 1px solid #eee; /* Add a border to separate image and info */
+//     background-color: #f8f8f8; /* Background color for info section */
+
+//     h3 {
+//       margin-bottom: 10px;
+//     }
+
+//     .expanded-info {
+//       display: none; /* Initially hidden */
+//       padding-top: 10px; /* Add some padding for the expanded info */
+//       text-align: left; /* Align text to the left */
+//     }
+//   }
+
+//   &:hover {
+//     .expanded-info {
+//       display: block; /* Display the expanded info on hover */
+//     }
+//   }
+// }
+
+
+// .restaurant-card {
+//   background-color: white;
+//   padding: 20px;
+//   border-radius: 20px;
+//   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+//   margin: 10px;
+//   text-align: center;
+
+//   h3 {
+//     margin-bottom: 10px;
+//   }
+
+//   p {
+//     font-style: italic;
+//     margin-bottom: 20px;
+//   }
+
+//   .slideshow-container {
+//     position: relative;
+//     max-width: 300px;
+//     margin: 0 auto;
+//   }
+
+//   .prev-button,
+//   .next-button {
+//     position: absolute;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     font-size: 24px;
+//     background: none;
+//     border: none;
+//     cursor: pointer;
+//     outline: none;
+//   }
+
+//   .prev-button {
+//     left: 0;
+//   }
+
+//   .next-button {
+//     right: 0;
+//   }
+
+//   .slideshow-photo {
+//     text-align: center;
+//     border-radius: 15px;
+//     img {
+//       max-width: 100%;
+//       height: auto;
+//       border-radius: 15px;
+//     }
+//     p {
+//       margin-top: 10px;
+//     }
+//   }
+
+//   .restaurant-photos {
+//     ul {
+//       list-style: none;
+//       padding: 0;
+//       display: flex;
+//       justify-content: center;
+//       li {
+//         margin-right: 5px;
+//         cursor: pointer;
+//         img {
+//           max-width: 50px;
+//           height: auto;
+//           border: 2px solid transparent;
+//           border-radius: 5px;
+//         }
+//         &.active {
+//           border-color: #007bff; /* Highlight the active thumbnail */
+//         }
+//       }
+//     }
+//   }
+// }
